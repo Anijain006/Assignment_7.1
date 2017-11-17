@@ -23,9 +23,13 @@ public class MainActivity extends AppCompatActivity {
         resetBtn = (Button)findViewById(R.id.resetButton);
         searchBtn= (Button)findViewById(R.id.searchButton);
 
+        //initializing the search button
+
         searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                //run a check to see weather search box contaions something and not empty
 
                 if (!searchKeyEDT.getText().toString().isEmpty()) {
 
@@ -33,7 +37,11 @@ public class MainActivity extends AppCompatActivity {
 
                     Toast.makeText(MainActivity.this, "Showing result for " + searchKeyStr, Toast.LENGTH_SHORT).show();
 
+                    //Creating URL for Google Seaech with the search keyword attached
+
                     url = "https://www.google.co.in/search?q=" + searchKeyStr;
+
+                    //Making intent to go to the URL
 
                     Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                     startActivity(i);
