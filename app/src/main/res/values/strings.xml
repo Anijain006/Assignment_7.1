@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assignment 7.1</string>
+    <string name="search_key">Enter Search Term</string>
+    <string name="search_btn">Google Search</string>
+    <string name="reset_btn">Reset</string>
+    <string name="search_box_text">Search Box</string>
+</resources>
